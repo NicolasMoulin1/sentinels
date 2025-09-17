@@ -12,8 +12,8 @@ body {
 
 /* ---------- Background / Container ---------- */
 body {
-  background: linear-gradient(180deg, #6f56d9 0%, #6446d9 40%, #3f2b7a 100%);
-  color: #222;
+  background: linear-gradient(180deg, #0f1c55 0%, #0a0f2b 100%);
+  color: #fff;
   padding: 28px;
   display: flex;
   justify-content: center;
@@ -25,14 +25,9 @@ body {
   width: 100%;
   max-width: 1400px;
   min-height: 80vh;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.95)
-  );
-  border-radius: 14px;
-  padding: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
   overflow: hidden;
 }
 
@@ -43,6 +38,10 @@ body {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 18px;
+  background: linear-gradient(90deg, #ed1d24, #ffc72c);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -55,29 +54,30 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 9px;
-  background: linear-gradient(135deg, #81d4fa, #536dfe);
+  background: linear-gradient(135deg, #ed1d24, #ff5733);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
 }
 
 .title h1 {
   margin: 0;
   font-family: "Bangers", cursive;
-  font-size: 22px;
-  color: #3b2d7a;
-  letter-spacing: 1px;
+  font-size: 26px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 .title p {
   margin: 0;
   font-size: 13px;
-  color: #6b5fb3;
+  color: #ffc72c;
   opacity: 0.9;
+  text-shadow: 1px 1px #000;
 }
 
 .controls {
@@ -91,19 +91,20 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
-  background: linear-gradient(90deg, #1f8ef1, #00d4ff);
+  background: linear-gradient(90deg, #ed1d24, #ff5733);
   color: white;
   border-radius: 999px;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
+  text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(31, 142, 241, 0.25);
+  box-shadow: 0 6px 20px rgba(237, 29, 36, 0.6);
 }
 
 .btn.secondary {
-  background: linear-gradient(90deg, #7b61ff, #5f8bff);
-  box-shadow: 0 6px 18px rgba(124, 91, 255, 0.18);
+  background: linear-gradient(90deg, #0f1c55, #1c1c1c);
+  box-shadow: 0 6px 20px rgba(15, 28, 85, 0.5);
 }
 
 /* ---------- Week grid ---------- */
@@ -116,27 +117,25 @@ body {
 }
 
 .day {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.99),
-    rgba(255, 255, 255, 0.98)
-  );
+  background: linear-gradient(180deg, #1c1c1c, #0f1c55);
   border-radius: 12px;
   padding: 12px;
   min-height: 520px;
-  box-shadow: 0 6px 16px rgba(45, 29, 80, 0.06);
+  box-shadow: 0 6px 18px rgba(237, 29, 36, 0.4);
   display: flex;
   flex-direction: column;
+  border: 2px solid #ed1d24;
 }
 
 .day-header {
   text-align: center;
   font-weight: 700;
-  color: #444;
+  color: #ffc72c;
   font-size: 14px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(100, 80, 160, 0.06);
+  border-bottom: 1px solid rgba(237, 29, 36, 0.4);
   margin-bottom: 10px;
+  text-shadow: 1px 1px #000;
 }
 
 .day-body {
@@ -153,95 +152,88 @@ body {
 .mission {
   border-radius: 10px;
   padding: 10px 12px;
-  background: #ffffff;
-  box-shadow: 0 3px 10px rgba(60, 40, 100, 0.06);
-  border-left: 6px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg, #333, #1c1c1c);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-left: 6px solid #ed1d24;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   min-height: 48px;
 }
 
 .mission:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(60, 40, 100, 0.12);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(237, 29, 36, 0.8);
 }
 
 .mission .title {
   font-size: 13px;
   font-weight: 700;
-  color: #222;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
 
+.mission .title span {
+  text-shadow: 1px 1px #000;
+}
+
 .mission .meta {
   font-size: 12px;
-  color: #666;
+  color: #ffc72c;
   display: flex;
   gap: 8px;
   align-items: center;
+  text-shadow: 1px 1px #000;
 }
 
 .mission .desc {
   font-size: 12px;
-  color: #444;
+  color: #fff;
   opacity: 0.95;
+  text-shadow: 1px 1px #000;
 }
 
 /* ---------- Colors by menace level (1..12) ---------- */
 .level-1 {
-  border-left-color: #2ecc71;
-  background: linear-gradient(180deg, #ffffff, #f5fff7);
+  border-left-color: #ffc72c;
 }
 .level-2 {
-  border-left-color: #27ae60;
-  background: linear-gradient(180deg, #ffffff, #f4fff6);
+  border-left-color: #ffdd1c;
 }
 .level-3 {
-  border-left-color: #2bb673;
-  background: linear-gradient(180deg, #ffffff, #f6fff7);
+  border-left-color: #ffaa00;
 }
 .level-4 {
-  border-left-color: #f1c40f;
-  background: linear-gradient(180deg, #fffefb, #fff9e6);
+  border-left-color: #ed1d24;
 }
 .level-5 {
-  border-left-color: #f39c12;
-  background: linear-gradient(180deg, #fffdf7, #fff7ea);
+  border-left-color: #b71c1c;
 }
 .level-6 {
-  border-left-color: #ffb84d;
-  background: linear-gradient(180deg, #fffdf8, #fff6ed);
+  border-left-color: #8b0000;
 }
 .level-7 {
-  border-left-color: #ff8c42;
-  background: linear-gradient(180deg, #fffaf9, #fff5f1);
+  border-left-color: #ff5722;
 }
 .level-8 {
-  border-left-color: #ff7043;
-  background: linear-gradient(180deg, #fff9f8, #fff4f2);
+  border-left-color: #d32f2f;
 }
 .level-9 {
-  border-left-color: #ff5722;
-  background: linear-gradient(180deg, #fff6f5, #fff2f0);
+  border-left-color: #c62828;
 }
 .level-10 {
-  border-left-color: #e74c3c;
-  background: linear-gradient(180deg, #fff5f5, #fff0f0);
+  border-left-color: #b71c1c;
 }
 .level-11 {
-  border-left-color: #c0392b;
-  background: linear-gradient(180deg, #fff4f4, #ffeeef);
+  border-left-color: #7b1fa2;
 }
 .level-12 {
-  border-left-color: #8e44ad;
-  background: linear-gradient(180deg, #fbf5ff, #f9f0ff);
-  box-shadow: 0 6px 24px rgba(142, 68, 173, 0.06);
+  border-left-color: #6a1b9a;
 }
 
 /* Completed mission style */
@@ -254,14 +246,15 @@ body {
 /* Small pill showing menace number */
 .pill {
   font-size: 11px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.1);
   padding: 4px 8px;
   border-radius: 999px;
   display: inline-block;
   min-width: 36px;
   text-align: center;
   font-weight: 700;
-  color: #333;
+  color: #ffc72c;
+  text-shadow: 1px 1px #000;
 }
 
 /* Icon placeholders on mission (edit/delete) */
@@ -278,7 +271,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(0, 0, 0, 0.15);
   font-size: 12px;
   cursor: pointer;
 }
@@ -312,13 +305,15 @@ body {
     flex: 0 0 auto;
   }
 }
+
+/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,9 +321,31 @@ body {
 }
 
 .modal-content {
-  background: white;
+  background: linear-gradient(180deg, #1c1c1c, #0f1c55);
+  color: #fff;
   padding: 20px;
   border-radius: 12px;
   max-width: 400px;
   width: 100%;
+  box-shadow: 0 6px 20px rgba(237, 29, 36, 0.6);
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #ffc72c;
+  text-shadow: 1px 1px #000;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ed1d24;
+  background: #1c1c1c;
+  color: #fff;
 }

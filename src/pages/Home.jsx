@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import Modal from "../components/Modal";
+import comic2 from "../assets/Images/comic2.jpg";
 import villain1 from "../assets/Images/villain1.png";
 import villain2 from "../assets/Images/villain2.png";
 import villain3 from "../assets/Images/villain3.png";
@@ -65,7 +66,14 @@ export default function Home() {
   };
 
   return (
-    <div className="board">
+    <div
+      className="board"
+      style={{
+        backgroundImage: `url(${comic2})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       {/* Topbar */}
       <div className="topbar">
         <div className="title">
