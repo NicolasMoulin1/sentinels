@@ -1,5 +1,5 @@
 import React from "react";
-import SuperHero from "../assets/Images/SuperHero.jpg";
+import SuperHero from "../../assets/Images/SuperHero.jpg";
 import "./Modal.css";
 
 export default function Modal({ title, children, onClose }) {

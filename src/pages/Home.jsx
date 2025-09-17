@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import Modal from "../components/Modal";
+import Modal from "../components/Modal/Modal";
 import comic2 from "../assets/Images/comic2.jpg";
 import villain1 from "../assets/Images/villain1.png";
 import villain2 from "../assets/Images/villain2.png";
