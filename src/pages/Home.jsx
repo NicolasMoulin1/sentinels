@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Home.css";
 import Modal from "../components/Modal/Modal";
 import comic2 from "../assets/Images/comic2.jpg";
-import villain1 from "../assets/Images/villain1.png";
-import villain2 from "../assets/Images/villain2.png";
-import villain3 from "../assets/Images/villain3.png";
-import villain4 from "../assets/Images/villain4.png";
-import villain5 from "../assets/Images/villain5.png";
-import villain6 from "../assets/Images/villain6.png";
+import villain1 from "../assets/Images/Villain1.png";
+import villain2 from "../assets/Images/Villain2.png";
+import villain3 from "../assets/Images/Villain3.png";
+import villain4 from "../assets/Images/Villain4.png";
+import villain5 from "../assets/Images/Villain5.png";
+import villain6 from "../assets/Images/Villain6.png";
 
 const availableImages = [
   villain1,
